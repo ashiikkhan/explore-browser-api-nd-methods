@@ -30,3 +30,6 @@ console.log(noNeg(2, -3));
 const fifth = { id: 2, name: 'mr. hello', age: 45 };
 
 console.log(fifth.job);
+
+const nullDataType = null;
+console.log(null);
