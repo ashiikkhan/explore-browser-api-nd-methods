@@ -37,3 +37,12 @@ const displayInUI = (product, quantity) => {
   li.innerText = `${product} : ${quantity}`;
   productContainer.appendChild(li);
 };
+
+const displayStoredP = () => {
+  const cart = getCartFromLS();
+  for (const product in cart) {
+    const quantity = cart[product];
+    displayInUI(product, quantity);
+  }
+};
+displayStoredP();
